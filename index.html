@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <input
+        type="text"
+        autocomplete="off"
+        class="search"
+        placeholder="Search for a city"
+      />
+      <div class="sub-container">
+        <h1 class="location">
+          <ion-icon name="location"></ion-icon>
+          <span class="city"></span>
+        </h1>
+        <h2 class="date-and-time">Thu 5 December <span>8:41 am</span></h2>
+        <h2 class="degree">
+          <ion-icon name="cloud"></ion-icon>&nbsp;27°<span>c</span>
+        </h2>
+        <h2 class="description">Cloudy</h2>
+      </div>
+      <div class="upcoming">
+        <div class="mini-card">
+          Tue
+          <ion-icon name="sunny"></ion-icon>
+        </div>
+        <div class="mini-card">
+          Wed
+          <ion-icon name="sunny"></ion-icon>
+        </div>
+        <div class="mini-card">
+          Thu
+          <ion-icon name="sunny"></ion-icon>
+        </div>
+        <div class="mini-card">
+          Fri
+          <ion-icon name="sunny"></ion-icon>
+        </div>
+        <div class="mini-card">
+          Sat
+          <ion-icon name="sunny"></ion-icon>
+        </div>
+        <div class="mini-card">
+          Sun
+          <ion-icon name="sunny"></ion-icon>
+        </div>
+      </div>
+    </main>
+    <script defer src="./script.js"></script>
+  </body>
+</html>

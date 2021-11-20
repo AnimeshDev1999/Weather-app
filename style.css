@@ -18,6 +18,7 @@ body {
 }
 
 .main-container {
+  overflow: hidden;
   align-self: center;
   justify-self: center;
   width: 100%;
@@ -40,7 +41,7 @@ body {
 }
 
 .search {
-  width: 60rem;
+  width: 28rem;
   height: 5rem;
   font-size: 2.4rem;
   text-align: center;
@@ -49,7 +50,29 @@ body {
   border: none;
 }
 
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1.6rem;
+}
+
+.search-btn {
+  height: 5rem;
+  width: 5rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
 .search:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.search-btn:hover,
+.search-btn:active {
   background-color: rgba(0, 0, 0, 0.5);
   outline: none;
 }
@@ -64,6 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  transition: all 0.3s ease-in-out;
 }
 
 .degree {
@@ -71,12 +95,12 @@ body {
   margin: 6.3rem 0;
 }
 
-.location {
-  margin-bottom: 1.6rem;
+.date-and-time {
+  font-size: 1.6rem;
 }
 
-.date-and-time {
-  font-size: 2.4rem;
+.city {
+  display: block;
 }
 
 .description {
@@ -85,6 +109,7 @@ body {
 
 .upcoming {
   display: flex;
+  gap: 2.4rem;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.1),
@@ -95,9 +120,30 @@ body {
 .mini-card {
   margin: 1.2rem;
   padding: 1.2rem;
+  gap: 1.6rem;
   display: flex;
   font-size: 1.8rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.com-box {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.margin {
+  margin-bottom: 1.6rem;
+}
+
+.date {
+  margin-bottom: 1.6rem;
 }
